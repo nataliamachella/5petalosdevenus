@@ -1,0 +1,109 @@
+---
+import Layout from "../layouts/Layout.astro"
+import "../styles/global.css";
+import { Icon } from "astro-icon/components";
+---
+
+<Layout>
+      <main class="text-gray-700">
+
+    <!-- HERO -->
+    <section class="px-6 py-24">
+
+      <div class="mx-auto max-w-4xl text-center">
+
+       
+        <h1 class="mb-6 text-4xl font-extrabold tracking-tight md:text-6xl">
+          Conectemos
+        </h1>
+
+        <p class="mx-auto max-w-2xl text-lg leading-relaxed text-gray-500">
+          Podés reservar una consulta o comunicarte conmigo a través de los
+          siguientes medios.
+        </p>
+
+      </div>
+
+    </section>
+
+    <!-- CONTACT CARDS -->
+    <section class="px-6 pb-24">
+
+      <div
+        class="mx-auto grid max-w-5xl gap-8 md:grid-cols-3"
+      >
+
+        <!-- PHONE -->
+        <a
+          href="https://wa.me/5491171155063"
+          target="_blank"
+          class="group rounded-3xl border border-white/10 bg-white/5 p-8 text-center backdrop-blur-xl transition-all duration-300 hover:-translate-y-1 hover:border-pink-400/40 hover:bg-white/10"
+        >
+
+                   <Icon
+            name="tabler:brand-whatsapp"
+            class="mx-auto mb-6 size-14 text-pink-400"
+          />
+
+
+          <h2 class="mb-3 text-2xl font-bold">
+            WhatsApp
+          </h2>
+
+          <p class="text-gray-500">
+            +54 9 11 7115 5063
+          </p>
+
+        </a>
+
+        <!-- INSTAGRAM -->
+        <a
+          href="https://instagram.com/5petalosdevenus"
+          target="_blank"
+          class="group rounded-3xl border border-white/10 bg-white/5 p-8 text-center backdrop-blur-xl transition-all duration-300 hover:-translate-y-1 hover:border-pink-400/40 hover:bg-white/10"
+        >
+
+              <Icon
+            name="tabler:brand-instagram"
+            class="mx-auto mb-6 size-14 text-pink-400"
+          />
+
+          <h2 class="mb-3 text-2xl font-bold">
+            Instagram
+          </h2>
+
+          <p class="text-gray-500">
+            @5petalosdevenus
+          </p>
+
+        </a>
+
+        <!-- YOUTUBE -->
+        <a
+          href="https://youtube.com/"
+          target="_blank"
+          class="group rounded-3xl border border-white/10 bg-white/5 p-8 text-center backdrop-blur-xl transition-all duration-300 hover:-translate-y-1 hover:border-pink-400/40 hover:bg-white/10"
+        >
+
+           <Icon
+            name="tabler:brand-youtube"
+            class="mx-auto mb-6 size-14 text-pink-400"
+          />
+
+          <h2 class="mb-3 text-2xl font-bold">
+            YouTube
+          </h2>
+
+          <p class="text-gray-500">
+            Canal Astrológico
+          </p>
+
+        </a>
+
+      </div>
+
+    </section>
+
+  </main>
+
+</Layout>

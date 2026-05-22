@@ -1,0 +1,95 @@
+---
+import Layout from "../layouts/Layout.astro"
+import "../styles/global.css";
+import fotoperfil from "../assets/foto-perfil.png"
+---
+
+<Layout>
+
+      <main class=" text-gray-700">
+
+    <!-- HERO -->
+    <section class="border-b border-white/10 px-6 py-24">
+
+      <div class="mx-auto max-w-4xl text-center">
+
+        <p class="mb-4 text-sm font-semibold uppercase tracking-[0.3em] text-pink-400">
+          Sobre mí
+        </p>
+
+        <h1 class="mb-6 text-4xl font-extrabold tracking-tight md:text-6xl">
+          Astrología como herramienta de transformación
+        </h1>
+
+        <p class="mx-auto max-w-2xl text-lg leading-relaxed text-gray-500">
+          Acompaño procesos personales y vinculares a través de lecturas
+          astrológicas profundas y personalizadas.
+        </p>
+
+      </div>
+
+    </section>
+
+    <!-- ABOUT -->
+    <section class="px-6 py-20">
+
+      <div class="mx-auto grid max-w-6xl items-center gap-16 lg:grid-cols-2">
+
+        <!-- Image -->
+        <div class="overflow-hidden rounded-3xl">
+
+          <img
+            src={fotoperfil.src}
+            alt="Astróloga"
+            class="h-full w-full object-cover"
+          />
+
+        </div>
+
+        <!-- Content -->
+        <div>
+
+          <h2 class="mb-6 text-3xl font-bold">
+            Hola, soy Natalia
+          </h2>
+
+          <div class="space-y-6 text-lg leading-relaxed text-gray-500">
+
+            <p>
+              Mi enfoque integra astrología predictiva y
+              evolutiva para ayudarte a comprender tus ciclos y relaciones.
+            </p>
+
+            <p>
+              Trabajo con revolución solar, técnicas de los Señores del Tiempo, sinastría y carta compuesta, 
+              ofreciendo espacios de reflexión y claridad para cada consulta.
+            </p>
+
+            <p>
+              Creo en la astrología como lenguaje simbólico y herramienta
+              consciente para acompañar procesos de crecimiento personal.
+            </p>
+
+          </div>
+
+          <!-- CTA -->
+          <div class="mt-10">
+
+            <a
+              href="/contacto"
+              class="inline-flex rounded-full bg-venus px-8 py-4 text-sm font-bold uppercase tracking-wide text-white transition-all duration-300 hover:scale-105 hover:bg-venus/80"
+            >
+              Reservar consulta
+            </a>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+  </main>
+
+</Layout>

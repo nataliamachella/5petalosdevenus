@@ -1,0 +1,73 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Hero from "../components/Hero.astro";
+import ServicesSection from "../components/ServicesSection.astro";
+
+import "../styles/global.css";
+
+import revsolar from "../assets/revsolar.png";
+import sinastria from "../assets/sinastria.png";
+import compuesta from "../assets/compuesta.png"
+
+interface Service {
+  title: string;
+  subtitle: string;
+  text: string;
+  img: {
+    src: string;
+    alt: string;
+    loading?: "lazy" | "eager";
+  };
+}
+
+const services: Service[] = [
+  {
+    title: "Revolución Solar",
+    subtitle: "Astrología Predictiva",
+    text: "Descubrí las energías y aprendizajes de tu próximo año.",
+    img: {
+      src: revsolar.src,
+      alt: "Carta de revolución solar",
+      loading: "lazy",
+    },
+  },
+
+  {
+    title: "Sinastría",
+    subtitle: "Relaciones",
+    text: "Analizá la compatibilidad y dinámica de vínculos importantes.",
+    img: {
+      src: sinastria.src,
+      alt: "Lectura de sinastría",
+      loading: "lazy",
+    },
+  },
+
+  {
+    title: "Carta Compuesta",
+    subtitle: "Vínculos",
+    text: "Explorá la energía compartida de una relación.",
+    img: {
+      src: compuesta.src,
+      alt: "Carta compuesta astrológica",
+      loading: "lazy",
+    },
+  },
+];
+---
+
+<Layout>
+
+  <main>
+
+    <Hero
+      title="Astrología para conectar con tu propósito"
+      description="Lecturas personalizadas de revolución solar, sinastría y carta compuesta para acompañar tus procesos personales y vinculares."
+      buttonText="Agendar cita"
+    />
+
+    <ServicesSection services={services} />
+
+  </main>
+
+</Layout>

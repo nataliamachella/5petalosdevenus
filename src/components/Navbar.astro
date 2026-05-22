@@ -1,0 +1,37 @@
+---
+const navigation = [
+  { href: "/", label: "Inicio", active: true },
+  { href: "/sobre-mi", label: "Sobre Mi" },
+  { href: "/blog", label: "Blog" },
+  { href: "/contacto", label: "Contacto" },
+];
+---
+
+  <!-- Navigation -->
+        <nav
+          aria-label="Navegación principal"
+          class="hidden sm:block"
+        >
+          <ul class="flex items-center gap-2">
+
+            {
+              navigation.map((item) => (
+                <li>
+                  <a
+                    href={item.href}
+                    aria-current={item.active ? "page" : undefined}
+                    class:list={[
+                      "rounded-md px-4 py-2 text-sm font-medium transition-colors duration-200",
+                      item.active
+                        ? "bg-pink-500 text-amber-50"
+                        : "text-white hover:bg-white/10 hover:text-amber-50",
+                    ]}
+                  >
+                    {item.label}
+                  </a>
+                </li>
+              ))
+            }
+
+          </ul>
+        </nav>

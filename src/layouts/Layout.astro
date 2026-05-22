@@ -1,0 +1,75 @@
+---
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+import bg from "../assets/bg.png";
+---
+
+<html lang="es">
+
+  <head>
+
+    <meta charset="UTF-8" />
+
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1"
+    />
+
+    <title>5 Pétalos de Venus</title>
+
+    <meta
+      name="description"
+      content="Lecturas astrológicas personalizadas: revolución solar, sinastría y carta compuesta en 5 Pétalos de Venus."
+    />
+
+    <meta
+      name="keywords"
+      content="astrología, revolución solar, sinastría, carta compuesta, astrología predictiva, horóscopo"
+    />
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="5 Pétalos de Venus" />
+
+    <meta
+      property="og:description"
+      content="Astrología personalizada"
+    />
+
+    <meta property="og:type" content="website" />
+
+    <!-- Favicons -->
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="/favicon.svg"
+    />
+
+    <link rel="icon" href="/favicon.ico" />
+
+  </head>
+
+  <body class="relative min-h-screen text-white antialiased">
+ 
+    <!-- Background -->
+    <div
+      class="fixed inset-0 -z-10 bg-cover bg-center bg-fixed"
+      style={`background-image: url(${bg.src})`}
+    >
+
+      <!-- Overlay -->
+      <div class="absolute inset-0  backdrop-blur-[2px]"></div>
+
+    </div>
+
+
+    <Header />
+
+    <main>
+      <slot />
+    </main>
+
+    <Footer />
+
+  </body>
+
+</html>
