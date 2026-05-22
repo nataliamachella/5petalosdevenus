@@ -1,0 +1,153 @@
+---
+import Layout from "../layouts/Layout.astro";
+
+import "../styles/global.css";
+
+import cartacompuesta from "../assets/compuesta.png";
+---
+
+<Layout>
+  <main class="text-gray-700">
+    <!-- HERO -->
+    <section class="px-6 py-24">
+      <div class="mx-auto grid max-w-6xl items-center gap-16 lg:grid-cols-2">
+        <!-- Content -->
+        <div>
+          <p
+            class="mb-4 text-sm font-semibold uppercase tracking-[0.3em] text-pink-400"
+          >
+            Carta Compuesta
+          </p>
+
+          <h1
+            class="mb-6 text-5xl font-extrabold tracking-tight text-neutral-900 md:text-6xl"
+          >
+            La identidad energética de una relación
+          </h1>
+
+          <p class="mb-8 text-lg leading-relaxed text-gray-500">
+            La carta compuesta revela la energía que nace del vínculo entre dos
+            personas, mostrando el propósito, dinámica y evolución de la
+            relación.
+          </p>
+
+          <a
+            href="/contacto"
+            class="inline-flex rounded-full bg-pink-500 px-8 py-4 text-sm font-bold uppercase tracking-wide text-white transition-all duration-300 hover:scale-105 hover:bg-pink-400"
+          >
+            Reservar lectura
+          </a>
+        </div>
+
+        <!-- Image -->
+        <div class="overflow-hidden rounded-3xl">
+          <img
+            src={cartacompuesta.src}
+            alt="Carta Compuesta"
+            class="h-full w-full object-cover"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTENT -->
+    <section class="px-6 pb-24">
+      <div class="mx-auto max-w-4xl space-y-20">
+        <!-- SECTION: QUE ES -->
+        <div>
+          <h2 class="mb-6 text-3xl font-bold text-neutral-900">
+            ¿Qué es una carta compuesta?
+          </h2>
+
+          <div class="space-y-6 text-lg leading-relaxed text-gray-500">
+            <p>
+              La carta compuesta es una técnica astrológica que fusiona dos
+              cartas natales para crear una tercera carta: la carta de la
+              relación.
+            </p>
+
+            <p>
+              Esta carta representa la identidad simbólica del vínculo y permite
+              comprender cómo funciona la relación como unidad.
+            </p>
+
+            <p>
+              A través de este análisis se observan dinámicas emocionales,
+              propósito compartido, desafíos y potencial evolutivo del vínculo.
+            </p>
+          </div>
+        </div>
+
+        <!-- SECTION: QUE INCLUYE -->
+        <div>
+          <h2 class="mb-6 text-3xl font-bold text-neutral-900">
+            ¿Qué incluye la lectura?
+          </h2>
+
+          <div class="space-y-6 text-lg leading-relaxed text-gray-500">
+            <p>
+              Analizamos la estructura energética de la relación, identificando
+              fortalezas, tensiones y aprendizajes compartidos.
+            </p>
+
+            <p>
+              La lectura aborda la dinámica emocional, objetivos del vínculo y
+              formas en las que ambas personas pueden crecer a través de la
+              relación.
+            </p>
+
+            <p>
+              También observamos los ciclos actuales del vínculo y las energías
+              predominantes en el momento presente.
+            </p>
+          </div>
+        </div>
+
+        <!-- SECTION: EXPERIENCIA -->
+        <div>
+          <h2 class="mb-6 text-3xl font-bold text-neutral-900">
+            Una mirada profunda sobre el vínculo
+          </h2>
+
+          <div class="space-y-6 text-lg leading-relaxed text-gray-500">
+            <p>
+              La carta compuesta permite comprender la relación desde una
+              perspectiva más amplia y consciente.
+            </p>
+
+            <p>
+              Muchas veces los vínculos funcionan como espacios de
+              transformación y crecimiento mutuo.
+            </p>
+
+            <p>
+              Esta lectura busca aportar claridad, comprensión y herramientas
+              para acompañar el proceso evolutivo de la relación.
+            </p>
+          </div>
+        </div>
+
+        <!-- CTA -->
+        <div
+          class="rounded-3xl border border-pink-200 bg-pink-50 p-10 text-center"
+        >
+          <h3 class="mb-4 text-3xl font-bold text-neutral-900">
+            Explorá la energía de tu vínculo
+          </h3>
+
+          <p class="mx-auto mb-8 max-w-2xl text-lg text-gray-600">
+            Comprendé la dinámica profunda de la relación y descubrí las
+            posibilidades de crecimiento compartido.
+          </p>
+
+          <a
+            href="/contacto"
+            class="inline-flex rounded-full bg-pink-500 px-8 py-4 text-sm font-bold uppercase tracking-wide text-white transition-all duration-300 hover:scale-105 hover:bg-pink-400"
+          >
+            Reservar lectura
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+</Layout>

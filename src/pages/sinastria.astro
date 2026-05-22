@@ -1,0 +1,129 @@
+---
+import Layout from "../layouts/Layout.astro";
+
+import "../styles/global.css";
+
+import revsolar from "../assets/revsolar.png";
+---
+
+<Layout>
+  <main class="text-gray-700">
+    <!-- HERO -->
+    <section class="px-6 py-24">
+      <div class="mx-auto grid max-w-6xl items-center gap-16 lg:grid-cols-2">
+        <!-- Content -->
+        <div>
+          <p
+            class="mb-4 text-sm font-semibold uppercase tracking-[0.3em] text-pink-400"
+          >
+            Sinastría
+          </p>
+
+          <h1
+            class="mb-6 text-5xl font-extrabold tracking-tight text-neutral-900 md:text-6xl"
+          >
+            Comprendé la energía de tus vínculos
+          </h1>
+
+          <p class="mb-8 text-lg leading-relaxed text-gray-500">
+            La sinastría permite explorar la dinámica emocional, afectiva y
+            evolutiva entre dos personas, revelando compatibilidades, desafíos y
+            aprendizajes compartidos.
+          </p>
+
+          <a
+            href="/contacto"
+            class="inline-flex rounded-full bg-pink-500 px-8 py-4 text-sm font-bold uppercase tracking-wide text-white transition-all duration-300 hover:scale-105 hover:bg-pink-400"
+          >
+            Reservar lectura
+          </a>
+        </div>
+
+        <!-- Image -->
+        <div class="overflow-hidden rounded-3xl">
+          <img
+            src={revsolar.src}
+            alt="Sinastría"
+            class="h-full w-full object-cover"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTENT -->
+    <section class="px-6 pb-24">
+      <div class="mx-auto max-w-4xl space-y-20">
+        <!-- SECTION: QUE ES -->
+        <div>
+          <h2 class="mb-6 text-3xl font-bold text-neutral-900">
+            ¿Qué es una sinastría?
+          </h2>
+
+          <div class="space-y-6 text-lg leading-relaxed text-gray-500">
+            <p>
+              La sinastría es una técnica astrológica que compara dos cartas
+              natales para analizar cómo interactúan sus energías.
+            </p>
+
+            <p>
+              A través de este estudio es posible comprender patrones
+              emocionales, formas de comunicación, atracción, compatibilidad y
+              desafíos dentro del vínculo.
+            </p>
+
+            <p>
+              No se trata únicamente de relaciones amorosas: también puede
+              aplicarse a amistades, vínculos familiares o asociaciones
+              profesionales.
+            </p>
+          </div>
+        </div>
+
+        <!-- SECTION: QUE INCLUYE -->
+        <div>
+          <h2 class="mb-6 text-3xl font-bold text-neutral-900">
+            ¿Qué incluye la lectura?
+          </h2>
+
+          <div class="space-y-6 text-lg leading-relaxed text-gray-500">
+            <p>
+              Analizamos los puntos de encuentro y tensión entre ambas cartas
+              para comprender la dinámica profunda de la relación.
+            </p>
+
+            <p>
+              La lectura aborda compatibilidad emocional, comunicación, deseo,
+              crecimiento mutuo y desafíos evolutivos del vínculo.
+            </p>
+
+            <p>
+              También observamos las potencialidades de la relación y los
+              aprendizajes que cada persona despierta en la otra.
+            </p>
+          </div>
+        </div>
+
+        <!-- CTA -->
+        <div
+          class="rounded-3xl border border-pink-200 bg-pink-50 p-10 text-center"
+        >
+          <h3 class="mb-4 text-3xl font-bold text-neutral-900">
+            Reservá tu lectura personalizada
+          </h3>
+
+          <p class="mx-auto mb-8 max-w-2xl text-lg text-gray-600">
+            Explorá tus vínculos desde una mirada consciente, profunda y
+            transformadora.
+          </p>
+
+          <a
+            href="/contacto"
+            class="inline-flex rounded-full bg-pink-500 px-8 py-4 text-sm font-bold uppercase tracking-wide text-white transition-all duration-300 hover:scale-105 hover:bg-pink-400"
+          >
+            Reservar lectura
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+</Layout>

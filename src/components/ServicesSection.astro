@@ -5,6 +5,7 @@ interface Service {
   title: string;
   subtitle: string;
   text: string;
+  href:string;
   img: {
     src: string;
     alt: string;
@@ -41,6 +42,7 @@ const { services } = Astro.props;
           title={service.title}
           subtitle={service.subtitle}
           text={service.text}
+          href={service.href}
           img={service.img}
         />
       ))

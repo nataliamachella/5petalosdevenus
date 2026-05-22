@@ -8,7 +8,6 @@ interface Props {
 const {
   title,
   description,
-  buttonText = "Agendar cita",
 } = Astro.props;
 ---
 
@@ -25,11 +24,14 @@ const {
       {description}
     </p>
 
-    <button
-      class="rounded-full bg-venus px-8 py-4 text-sm font-bold uppercase tracking-wide text-white transition-all duration-300 hover:scale-105 hover:bg-venus/80"
-    >
-      {buttonText}
-    </button>
+    <!-- CTA -->
+
+<a
+  href="/contacto"
+  class="inline-flex rounded-full bg-pink-500 px-8 py-4 text-sm font-bold uppercase tracking-wide text-white transition-all duration-300 hover:scale-105 hover:bg-pink-400"
+>
+  Agendar Cita
+</a>
 
   </div>
 </section>
