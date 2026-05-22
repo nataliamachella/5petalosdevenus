@@ -13,6 +13,7 @@ interface Service {
   title: string;
   subtitle: string;
   text: string;
+  href: string;
   img: {
     src: string;
     alt: string;
@@ -25,6 +26,7 @@ const services: Service[] = [
     title: "Revolución Solar",
     subtitle: "Astrología Predictiva",
     text: "Descubrí las energías y aprendizajes de tu próximo año.",
+    href: "/revolucion-solar",
     img: {
       src: revsolar.src,
       alt: "Carta de revolución solar",
@@ -36,6 +38,7 @@ const services: Service[] = [
     title: "Sinastría",
     subtitle: "Relaciones",
     text: "Analizá la compatibilidad y dinámica de vínculos importantes.",
+    href: "/sinastria",
     img: {
       src: sinastria.src,
       alt: "Lectura de sinastría",
@@ -47,6 +50,7 @@ const services: Service[] = [
     title: "Carta Compuesta",
     subtitle: "Vínculos",
     text: "Explorá la energía compartida de una relación.",
+    href: "/carta-compuesta",
     img: {
       src: compuesta.src,
       alt: "Carta compuesta astrológica",
